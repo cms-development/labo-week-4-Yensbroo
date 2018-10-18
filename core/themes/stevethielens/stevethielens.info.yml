@@ -4,12 +4,15 @@ type: theme
 core: 8.x
 
 libraries:
-  - stevethielens/global-css
   - stevethielens/fontawesome
+  - stevethielens/bootstrap
+  - stevethielens/global-css
   - stevethielens/global-js
 
 regions:
   header: "Header"
+  subheader_left: "Subheader left"
+  subheader_right: "Subheader right"
   content: "Main content"
   sidebar: "Sidebar"
   footer: "Footer"

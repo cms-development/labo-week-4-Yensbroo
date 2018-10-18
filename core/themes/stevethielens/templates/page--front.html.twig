@@ -1,31 +1,44 @@
 <div class="layout-container">
 
   <header role="banner">
-    {{ page.header }}
+    <div class="container">
+      {{ page.header }}
+    </div>
   </header>
 
   {{ page.primary_menu }}
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-6">
+        {{page.subheader_left}}
+      </div>
+      <div class="col-lg-6">
+        {{ page.subheader_right}}
+      </div>
+    </div>
+  </div>
 
   <main role="main">
-    <a id="main-content" tabindex="-1"></a>{# link is in html.html.twig #}
+    <div class="container">
+      <div class="row">
 
-    <div class="layout-content">
-      <h2>Test?</h2>
-      {{ page.content }}
-    </div>{# /.layout-content #}
+        <div class="layout-content col-lg-9">
+          {{ page.content }}
+        </div>{# /.layout-content #}
 
-    {% if page.sidebar_first %}
-      <aside class="layout-sidebar-first" role="complementary">
-        {{ page.sidebar_first }}
-      </aside>
-    {% endif %}
-
+        {% if page.sidebar %}
+        <div class="layout-sidebar col-lg-3" role="complementary">
+          {{ page.sidebar }}
+        </div>
+        {% endif %}
+      </div>
+    </div>
   </main>
 
   {% if page.footer %}
-    <footer role="contentinfo">
-      {{ page.footer }}
-    </footer>
+  <footer role="contentinfo">
+    {{ page.footer }}
+  </footer>
   {% endif %}
 
 </div>{# /.layout-container #}
