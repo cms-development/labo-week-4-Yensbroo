@@ -1,5 +1,39 @@
+header {
+  background: white;
+  height: 88px; }
+
 .steve {
   width: 20%; }
 
+.nav-item {
+  padding-right: 20px;
+  color: orange; }
+
+.nav-item a {
+  color: orange;
+  text-decoration: none; }
+
+.subheader {
+  background: white;
+  padding: 20px; }
+
+.sidebar-container {
+  background: white;
+  padding: 20px; }
+
 body {
-  background: orange; }
+  background: #F7F4F3; }
+
+.content-container {
+  background: white;
+  padding: 20px; }
+
+.content-container,
+.sidebar-container,
+.subheader-container {
+  -webkit-box-shadow: 0 1px 2px rgba(25, 25, 25, 0.2);
+          box-shadow: 0 1px 2px rgba(25, 25, 25, 0.2); }
+
+a {
+  color: orange;
+  text-decoration: none; }

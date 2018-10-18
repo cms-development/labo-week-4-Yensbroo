@@ -11,18 +11,23 @@
 
   <main role="main">
   <div class="container">
-    <a id="main-content" tabindex="-1"></a>{# link is in html.html.twig #}
+      <div class="row">
 
-    <div class="layout-content">
-      {{ page.content }}
-    </div>{# /.layout-content #}
+        <div class="layout-content col-lg-9">
+        <div class="content-container">
+          {{ page.content }}
+          </div>
+        </div>{# /.layout-content #}
 
-    {% if page.sidebar %}
-      <aside class="layout-sidebar-first" role="complementary">
-        {{ page.sidebar }}
-      </aside>
-    {% endif %}
-  </div>
+        {% if page.sidebar %}
+        <div class="layout-sidebar col-lg-3" role="complementary">
+        <div class="sidebar-container">
+          {{ page.sidebar }}
+          </div>
+        </div>
+        {% endif %}
+      </div>
+    </div>
   </main>
 
   {% if page.footer %}

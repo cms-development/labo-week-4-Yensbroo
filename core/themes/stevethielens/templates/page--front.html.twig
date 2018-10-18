@@ -8,12 +8,16 @@
 
   {{ page.primary_menu }}
   <div class="container">
-    <div class="row">
+    <div class="row mb-4 mt-4">
       <div class="col-lg-6">
+        <div class="subheader">
         {{page.subheader_left}}
+        </div>
       </div>
       <div class="col-lg-6">
+      <div class="subheader">
         {{ page.subheader_right}}
+        </div>
       </div>
     </div>
   </div>
@@ -23,12 +27,16 @@
       <div class="row">
 
         <div class="layout-content col-lg-9">
+        <div class="content-container">
           {{ page.content }}
+          </div>
         </div>{# /.layout-content #}
 
         {% if page.sidebar %}
         <div class="layout-sidebar col-lg-3" role="complementary">
+        <div class="sidebar-container">
           {{ page.sidebar }}
+          </div>
         </div>
         {% endif %}
       </div>
